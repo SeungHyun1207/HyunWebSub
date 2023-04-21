@@ -1,0 +1,15 @@
+Spring Boot Application 개발 시 순서
+
+#001.DTO 객체 정의
+
+#002.Mapper 메소드 정의
+
+#003.XML 쿼리 정의
+
+#004.Service 서비스 정의
+
+#005.Controller 컨트롤러 정의
+
+#006.ViewPage <Html, css, js> 정의
+
+#007.실행(Test)
