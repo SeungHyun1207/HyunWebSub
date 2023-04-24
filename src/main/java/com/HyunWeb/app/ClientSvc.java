@@ -1,4 +1,4 @@
-package com.HyunWeb.api;
+package com.HyunWeb.app;
 
 public class ClientSvc {
 }

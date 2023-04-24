@@ -2,28 +2,10 @@
  * CLIENT
  */
 
-let apiRequestAPI = '/client';
 
-$(document).ready(function() {
-    console.log(1);
-    clientDashBoard();
+$(document).ready(function(){
 
-});
-function clientDashBoard(){
 
-    $.ajax({
 
-        url : `${apiRequestAPI}`,
-        type : 'GET',
-        success : function(data){
-            console.log(data);
-            console.log(2);
-        },
-        error(xhr, status, error){
 
-            getErrorMsg(xhr.status);
-
-        }
-    })
-
-}
+})

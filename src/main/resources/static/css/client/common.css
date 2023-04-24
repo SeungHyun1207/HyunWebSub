@@ -4,19 +4,19 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-
-	--transition: all .2s ease;
 }
 
 body{
-	width:100%;
-	height:100vh;
+	width: 100%;
+	height: 100vh;
 	padding: 5%;
-	margin:0;
-	background: #b8daff;
+	margin: 0;
+	background: #e0d0d0;
 }
-/** 최상단 페이지 **/
+
+/**
+	최상단
+ */
 .app{
 	background-color: rgba(16 18 27 / 30%);
 	width: 100%;
@@ -33,8 +33,10 @@ body{
 	border: 3px solid black;
 }
 
-/* Header */
-.ctHeaderWrap{
+/**
+	Header 최상위
+ */
+.cHeaderWrap{
 	width: 85%;
 	height: 50px;
 	position: fixed;
@@ -46,28 +48,30 @@ body{
 	text-decoration: none;
 	align-items: center;
 }
-.ctHeader{
+.cHeader{
 	display: flex;
 	width: 100%;
 	height: 100%;
 }
-.ctHeader a{
+.cHeader a{
 	text-decoration: none;
 }
 .navWrap{
 	display: flex;
-	justify-content: space-between;
-	width:80%;
+	width: 100%;
 	padding: 0 10px 0 10px;
+	justify-content: space-around;
+	margin-top: 10px;
 }
 .loginBox{
 	display: flex;
 	width: 20%;
 }
 
-
-/* left_sidebar_wrap */
-.ctSideBarWrap{
+/**
+	SideBar 최상위
+ */
+.cSideBarWrap{
 	position: fixed;
 	width: 15%;
 	height: 80vh;
@@ -78,22 +82,11 @@ body{
 	padding: 10px 10px;
 	text-align: center;
 }
-/* 메뉴 닫았을 때 */
-.ctSideBarWrap.menuclose{
-	width: 5%;
-	font-size: 30px;
-}
-.ctSideBarWrap.menuclose .sideBarWrap .logo a{
-	opacity: 0;
-}
-.ctSideBarWrap.menuclose .sideBarWrap span{
-	opacity: 0;
-}
-
-.ctSideBarWrap a{
+.cSideBarWrap a{
+	width: 100%;
 	text-decoration: none;
 }
-.ctSideBar{
+.cSideBar{
 	width: 100%;
 	height: 100%;
 }
@@ -103,7 +96,7 @@ body{
 }
 .sideBarWrap .sideBar{
 	width: 100%;
-	height: 50px;
+	height: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -119,16 +112,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
-}
-.logo menuopen{
-	font-size: 50px;
-	cursor:pointer;
-}
-.bx-menu{
-	font-size: 30px;
-	margin-right: -25px;
-	background: #fff;
-	border-radius: 30px;
 }
 
 /** 다크모드/화이트모드 **/
@@ -172,6 +155,10 @@ body{
 
 
 
+
+/**
+	Content 최상위
+ */
 .conWrap{
 	position: relative;
 	top: 50px;
@@ -180,8 +167,6 @@ body{
 	background: #e2e2e2;
 	height: 100%;
 }
-
-/* Client Home */
 .chome{
 	position: relative;
 	top: 0;
@@ -198,9 +183,3 @@ body{
 	margin : 20px;
 	white-space: nowrap;
 }
-
-
-
-
-
-

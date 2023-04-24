@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lagn="ko" xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="clientSideBarFrag" class="ctSideBarWrap">
-  <div class="ctSideBar">
+<div th:fragment="clientSideBarFrag" class="cSideBarWrap">
+  <div class="cSideBar">
     <div class="sideBarWrap">
       <!-- 로고 -->
       <div class="logo">
-        <a th:href="@{/}">
+        <a th:href="@{/client}">
           <span>Hyun_Web</span>
         </a>
         <i class='bx bx-menu menuopen'></i>
@@ -13,7 +13,7 @@
       <!-- 홈 -->
       <ul class="sideBar">
         <li>
-          <a th:href="@{/home}">
+          <a th:href="@{/client}">
             <i class='bx bx-home' ></i>
             <span>Home</span>
           </a>
@@ -63,7 +63,7 @@
       </ul>
       <ul class="sideBar">
         <li>
-          <a th:href="@{/youTube}">
+          <a th:href="|https://www.youtube.com/channel/UCHC0mo3JMGpzGeV_mLKQ9ug|" target="_blank">
             <i class='bx bxl-youtube'></i>
             <span>Youtube</span>
           </a>
