@@ -10,15 +10,18 @@
     <th:block th:replace="fragments/clientConfig :: clientConfigFrg"></th:block>
 </head>
 <body>
-    <div class="app">
-        <!-- Header 연결-->
-        <th:block th:replace="fragments/clientHeader :: clientHeaderFrag"></th:block>
-        <!-- Side bar 연결 -->
-        <th:block th:replace="fragments/clientSideBar :: clientSideBarFrag"></th:block>
-        <!-- Content 연결-->
-        <th:block layout:fragment="content" class="conWrap"></th:block>
-        <!-- Footer 연결-->
-        <th:block th:replace="fragments/clientFooter :: clientFooterFrag"></th:block>
+    <div class="bodyBackGround">
+        <div class="app">
+            <!-- Header 연결 추후 고민하기 현재 사용 X -->
+<!--            <th:block th:replace="fragments/clientHeader :: clientHeaderFrag"></th:block>-->
+            <!-- Side bar 연결 -->
+            <th:block th:replace="fragments/clientSideBar :: clientSideBarFrag"></th:block>
+            <!-- Content 연결-->
+            <th:block layout:fragment="content" class="conWrap">
+                <!-- Footer 연결-->
+                <th:block th:replace="fragments/clientFooter :: clientFooterFrag"></th:block>
+            </th:block>
+        </div>
     </div>
 </body>
 </html>

@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
 
-    backGroundChange()
+    // backGroundChange()
 
 })
 
@@ -25,6 +25,7 @@ function menuChange(menu1, menu2, menu3, menu4, menu5){
 }
 
 /** 사이드바의 메뉴 클릭 시 해당 메뉴에 대한 배경이미지와 URL 변경 설정 */
+let bodyClasses = ""; // body 요소에 추가된 클래스들을 저장할 변수
 function backGroundChange() {
     // 사이드바의 a 요소 클릭 이벤트 추가
     $(".sideBar a").click(function(e){
@@ -51,8 +52,9 @@ function backGroundChange() {
                 break;
         }
 
-        // body 요소에 배경 이미지 클래스 추가
-        $("body").removeClass().addClass(bgClass);
+        // body 요소에 이전에 추가된 클래스들과 함께 배경 이미지 클래스 추가
+        $(".bodyBackGround").removeClass(bodyClasses).addClass(bgClass);
+        bodyClasses = bgClass; // bodyClasses 변수를 업데이트
 
         // URL 변경
         history.pushState(null, null, href);
@@ -84,5 +86,6 @@ function backGroundChange() {
     }
 
     // body 요소에 배경 이미지 클래스 추가
-    $("body").removeClass().addClass(bgClass);
+    $(".bodyBackGround").addClass(bgClass);
+    bodyClasses = bgClass; // bodyClasses 변수를 업데이트
 }
