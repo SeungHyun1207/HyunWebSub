@@ -198,7 +198,60 @@ body{
 }
 
 /**
-	Game 최상위
+	MainDashBoard 최상위 Start
+ */
+.fullpage{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+}
+.fullpage section{
+	width: 100%;
+	height: 100%;
+}
+
+/* Content 1 */
+.cont1{
+	background-color: aquamarine;
+}
+/* Content 2 */
+.cont2{
+	background-color: #71dd8a;
+}
+.cont2 .travelHeader{
+	border: 1px solid black;
+	text-align: center;
+}
+.cont2 .travelList{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 1%;
+}
+.cont2 .travelList .travelTitle{
+	width:100%;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+/* Content 3 */
+.cont3{
+	background-color: #6f42c1;
+}
+
+
+
+/**
+	MainDashBoard End
+ */
+
+/**
+	Game 최상위 Start
  */
 .gameHeader{
 	width: 100%;
@@ -226,8 +279,11 @@ body{
 }
 .cardTitle{
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 25px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	border: 1px solid black;
 }
+/**
+	Game End
+ */

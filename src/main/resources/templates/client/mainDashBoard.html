@@ -7,13 +7,52 @@
 </th:block>
 <div layout:fragment="content">
   <!-- 메인대시보드에 넣어야 할것 -->
-  <!-- 방문자 현황 / 공지사항 여러개 생각하기 -->
+  <!-- 방문자 현황 / 여행지(링크걸어서 여행페이지로 들어가도록표시) / 공지사항 여러개 생각하기
+        회원 현황(DB있을 때 대시보드에 접속중인회원 접속한 회원 언제 접속했는지에 대해서도)
+        방문자 현황 >> 누적 방문자수, 일일 방문자수 <<< 누적을 사용하기 위해서는 DB가 필요 일단은 일일 방문자수만
+        ex)  <h2>방문자 수 : <span th:text="${visitorCount}"></span></h2>
+   -->
   <div class="fullpage">
     <section class="cont1">
-      <h2>grid사용?</h2>
+      <h2>방문자 수 : <span th:text="${visitorCount}"></span></h2>
+      <h2>유저이름 : <span th:text="${userId}"></span></h2>
     </section>
+    <!-- 이 부분에는 여행지리스트 넣을것 > 카드형식으로 -->
     <section class="cont2">
-      <h2>grid사용?2</h2>
+      <div class="travelHeader">
+        <div class="travelrecommend">
+          <span>여행 추천지</span>
+        </div>
+      </div>
+      <div class="travelList">
+        <div class="travelTitle">
+          <h2>제주도</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>강남</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>부천</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>제주도</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>강남</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>부천</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>제주도</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>강남</h2>
+        </div>
+        <div class="travelTitle">
+          <h2>부천</h2>
+        </div>
+      </div>
     </section>
     <section class="cont3">
       <h2>grid사용?3</h2>
