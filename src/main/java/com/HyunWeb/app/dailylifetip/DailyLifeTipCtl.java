@@ -17,7 +17,7 @@ public class DailyLifeTipCtl {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     @GetMapping(value= "", produces = "application/json")
-    public String proFileHome(
+    public String dailyLiftTipHome(
             HttpServletRequest request,
             HttpServletResponse response
     ) throws Exception{

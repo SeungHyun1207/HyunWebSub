@@ -17,7 +17,7 @@ public class SettingCtl {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     @GetMapping(value= "", produces = "application/json")
-    public String proFileHome(
+    public String settingHome(
             HttpServletRequest request,
             HttpServletResponse response
     ) throws Exception{

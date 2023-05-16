@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GameCtl {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     @GetMapping(value= "", produces = "application/json")
-    public String proFileHome(
+    public String gameHome(
             HttpServletRequest request,
             HttpServletResponse response
     ) throws Exception{

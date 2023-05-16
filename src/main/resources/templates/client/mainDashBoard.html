@@ -14,53 +14,16 @@
         오늘의 랜덤 글(명언,등)
    -->
   <div class="fullpage" id="fullpage">
-    <section class="cont1 full-height">
-      <div>
+    <div class="container">
+      <div class="maincont cont1">
         <h2>방문자 수 : <span th:text="${visitorCount}"></span></h2>
         <h2>유저이름 : <span th:text="${userId}"></span></h2>
         <h2>오늘의 명언 : <p id="todayQuote"></p></h2>
       </div>
-    </section>
-    <!-- 이 부분에는 여행지리스트 넣을것 > 카드형식으로 -->
-    <section class="cont2 full-height">
-      <div class="travelHeader">
-        <div class="travelrecommend">
-          <span>여행 추천지</span>
-        </div>
-      </div>
-      <div class="travelList">
-        <div class="travelTitle">
-          <h2>제주도</h2>
-        </div>
-        <div class="travelTitle">
-          <h2>강남</h2>
-        </div>
-        <div class="travelTitle">
-          <h2>부천</h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-        <div class="travelTitle">
-          <h2></h2>
-        </div>
-      </div>
-    </section>
-    <section class="cont3 full-height">
-      <h2>grid사용?3</h2>
-    </section>
+      <div class="maincont cont2">2</div>
+      <div class="maincont cont3">3</div>
+      <div class="maincont cont4">4</div>
+    </div>
   </div>
 </div>
 <th:block layout:fragment="script">

@@ -17,7 +17,7 @@ public class StudyCtl {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     @GetMapping(value= "", produces = "application/json")
-    public String proFileHome(
+    public String studyHome(
             HttpServletRequest request,
             HttpServletResponse response
     ) throws Exception{

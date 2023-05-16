@@ -1,4 +1,4 @@
-package com.HyunWeb.app.profile;
+package com.HyunWeb.app.trip;
 
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -10,25 +10,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @RequiredArgsConstructor
 @Controller
-@RequestMapping(value ="/portFolio")
-public class PortFolioCtl {
+@RequestMapping(value ="/trip")
+public class TripCtl {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-
     @GetMapping(value= "", produces = "application/json")
-    public String portFolioHome(
+    public String tripHome(
             HttpServletRequest request,
             HttpServletResponse response
     ) throws Exception{
 
-        log.info("Test ::: portFolioMain Test");
+        log.info("Test ::: tripMain Test");
 
-        return "client/portFolio/portFolioMain";
+        return "client/trip/tripMain";
     }
-
-
 
 }
