@@ -217,6 +217,7 @@ body{
 .maincont {
 	max-width: 1170px;
 	height: 600px;
+	margin: 0 auto;
 }
 
 .container {
@@ -227,11 +228,6 @@ body{
 
 .maincont {
 	scroll-snap-align: start;
-}
-
-.container,
-.maincont {
-	margin: 0 auto;
 }
 
 .maincont:nth-of-type(1) {
