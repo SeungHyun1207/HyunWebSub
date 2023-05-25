@@ -1,8 +1,8 @@
 {
-  "homepage": "https://hyun1207.github.io/HyunWeb",
-  "name": "hyunweb",
+  "homepage": "https://SeungHyun1207.github.io/HyunWeb",
+  "name": "HyunWeb",
   "version": "1.0.0",
-  "description": "hyun's webproject",
+  "description": "Hyun's Webproject",
   "main": "src/main/resources/templates/client/mainDashBoard.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyun1207/HyunWeb.git"
+    "url": "git+https://github.com/SeungHyun1207/HyunWeb.git"
   },
   "author": "Hyun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hyun1207/HyunWeb/issues"
+    "url": "https://github.com/SeungHyun1207/HyunWeb/issues"
   },
 
   "devDependencies": {
