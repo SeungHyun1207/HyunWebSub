@@ -1,10 +1,13 @@
 {
+  "homepage": "https://hyun1207.github.io/HyunWeb",
   "name": "hyunweb",
   "version": "1.0.0",
   "description": "hyun's webproject",
   "main": "src/main/resources/templates/client/mainDashBoard.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hyun1207/HyunWeb/issues"
   },
-  "homepage": "https://hyun1207.github.io/HyunWeb"
+
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
